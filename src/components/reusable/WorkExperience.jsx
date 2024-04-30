@@ -16,10 +16,11 @@ const WorkExperience = () => {
             </h1>
             <span className=" text-2xl">{experience.position}</span>
           </div>
-          <ul>
+
+          <ul className=" flex flex-col gap-2">
             {experience.description.map((desc, i) => (
-              <li className=" flex items-baseline gap-4" key={i}>
-                <span className="text-3xl font-semibold">·</span> {desc}
+              <li key={i}>
+                <span className=" text-2xl font-semibold"> ·</span> {desc}
               </li>
             ))}
           </ul>
