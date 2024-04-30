@@ -4,10 +4,13 @@ import WorkExperience from "./reusable/WorkExperience";
 
 const Work = () => {
   return (
-    <section className="px-9">
+    <section className="px-9 overflow-x-hidden flex flex-col gap-4">
       <SectionIntro title="WORK" heading="Work Experience" />
-      <WorkExperience />
-    </section >
+      <>
+        <div className=" text-gray-200">———————————————————————</div>
+        <WorkExperience />
+      </>
+    </section>
   );
 };
 

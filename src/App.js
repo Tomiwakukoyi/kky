@@ -3,7 +3,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <HeroSect />
       <Work />
     </div>
