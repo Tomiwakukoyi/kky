@@ -7,7 +7,7 @@ const WorkExperience = () => {
       {workExperiences.map((experience, index) => (
         <div
           key={index}
-          className="flex flex-col items-start justify-center gap-3 pb-7"
+          className="flex flex-col items-start justify-center gap-3 pb-2"
         >
           <div className=" flex flex-col gap-2">
             <h1>
@@ -24,7 +24,7 @@ const WorkExperience = () => {
               </li>
             ))}
           </ul>
-          <div className=" text-gray-200">———————————————————————</div>
+          <div className=" mx-auto text-gray-200">———————————————————————</div>
         </div>
       ))}
     </div>
