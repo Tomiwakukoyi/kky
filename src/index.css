@@ -16,3 +16,7 @@
 .hideScroll::-webkit-scrollbar {
   display: none;
 }
+
+.dashes {
+  white-space: nowrap;
+}

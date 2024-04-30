@@ -1,8 +1,9 @@
+import HeroSect from "./components/HeroSect";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <HeroSect />
     </div>
   );
 }

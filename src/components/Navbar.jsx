@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +11,34 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="flex items-center text-white justify-between w-screen px-4 pt-3">
+      <div className="flex items-center text-white justify-between w-screen px-9 pt-4">
         <p className="flex flex-col text-center font-serif">
           Tomiwa <span>Kukoyi</span>
         </p>
-        <MenuIcon fontSize="large" onClick={toggleMenu} />
+        <MenuIcon
+          fontSize="large"
+          className="cursor-pointer"
+          onClick={toggleMenu}
+        />
       </div>
 
       {/* Mobile Nav */}
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0 left-0 bg-black flex text-white h-screen w-screen transition-transform duration-300`}
+        } fixed top-0  bg-black flex text-white h-screen w-screen transition-transform duration-300`}
       >
-        {isOpen && <span className="absolute right-5" onClick={toggleMenu}>close</span>}
-        <nav className=" flex flex-col items-center justify-center w-screen ">
-          <span>About</span>
-          <span>Work Experience</span>
-          <span>Contact</span>
+        {isOpen && (
+          <CloseIcon
+            fontSize="large"
+            className="cursor-pointer right-9 absolute top-4 "
+            onClick={toggleMenu}
+          />
+        )}
+        <nav className=" flex flex-col text-2xl items-center justify-center w-screen gap-3 ">
+          <span className=" cursor-pointer">About</span>
+          <span className=" cursor-pointer">Work Experience</span>
+          <span className=" cursor-pointer">Contact</span>
         </nav>
       </div>
     </div>
@@ -35,12 +46,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{
-  /* Overlay */
-}
-// {isOpen && (
-//     <div
-//       className="fixed top-0  left-0 w-screen h-screen bg-black opacity-50 z-10"
-//       onClick={toggleMenu}
-//     ></div>
-//   )}
