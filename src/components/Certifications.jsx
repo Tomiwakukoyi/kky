@@ -5,8 +5,8 @@ import SectionIntro from "./reusable/SectionIntro";
 
 const Certifications = () => {
   return (
-    <div className="px-9 flex flex-col gap-10">
-      <SectionIntro title="CERTIFICATIONS" heading="" />
+    <div className=" flex flex-col gap-10">
+      <SectionIntro title="CERTIFICATIONS" heading="" introSize="2xl" />
       <section className="flex flex-col gap-6">
         {certifications.map((certification, index) => (
           <Certification key={index} certTitle={certification.title} />

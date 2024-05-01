@@ -1,10 +1,10 @@
 import React from "react";
 
-const SectionIntro = ({title, heading}) => {
+const SectionIntro = ({title, heading, introSize}) => {
   return (
     <section className="text-white mt-16 flex flex-col justify-center items-start">
       <div>
-        <span className="flex text-2xl gap-3">
+        <span className={`flex text-${introSize} gap-3`}>
           <h1>{title}</h1>
           <span className="font-light"> ———> </span>
         </span>

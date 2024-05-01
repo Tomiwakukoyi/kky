@@ -2,9 +2,9 @@ import SectionIntro from "./reusable/SectionIntro";
 
 const HeroSect = () => {
   return (
-    <section className="text-white px-9  flex flex-col  gap-10">
+    <section className="text-white flex flex-col  gap-10">
       {/* greeting */}
-      <SectionIntro title="HI, I'M" heading="Tomiwa Kukoyi" />
+      <SectionIntro title="HI, I'M" heading="Tomiwa Kukoyi" introSize="lg" />
 
       {/* intoriduction */}
       <span>
