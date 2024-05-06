@@ -5,7 +5,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <div className="App overflow-x-hidden px-9">
+    <div className="App overflow-x-hidden px-9 md:px-16">
       <HeroSect />
       <Work />
       <Certifications />

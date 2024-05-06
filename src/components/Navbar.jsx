@@ -11,34 +11,51 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="flex items-center text-white justify-between w-screen px-9 pt-4">
-        <p className="flex flex-col text-center font-serif">
-          Tomiwa <span>Kukoyi</span>
-        </p>
-        <MenuIcon
-          fontSize="large"
-          className="cursor-pointer"
-          onClick={toggleMenu}
-        />
-      </div>
-
-      {/* Mobile Nav */}
-      <div
-        className={`${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0  bg-black flex text-white h-screen w-screen transition-transform duration-300`}
-      >
-        {isOpen && (
-          <CloseIcon
+      {/* mobile */}
+      <div className=" md:hidden">
+        <div className="flex items-center text-white justify-between w-screen px-9 pt-4">
+          <p className="flex flex-col text-center font-serif">
+            Tomiwa <span>Kukoyi</span>
+          </p>
+          <MenuIcon
             fontSize="large"
-            className="cursor-pointer right-9 absolute top-4 "
+            className="cursor-pointer md:hidden"
             onClick={toggleMenu}
           />
-        )}
-        <nav className=" flex flex-col text-2xl items-center justify-center w-screen gap-3 ">
+        </div>
+
+        <div
+          className={`${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          } fixed top-0  bg-black flex text-white h-screen w-screen transition-transform duration-300 md:hidden`}
+        >
+          {isOpen && (
+            <CloseIcon
+              fontSize="large"
+              className="cursor-pointer right-9 absolute top-4 "
+              onClick={toggleMenu}
+            />
+          )}
+          <nav className=" flex flex-col text-2xl items-center justify-center w-screen gap-3 ">
+            <span className=" cursor-pointer">About</span>
+            <span className=" cursor-pointer">Work Experience</span>
+            <span className=" cursor-pointer">Contact</span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Desktop Nav */}
+
+      <div className="flex items-center text-white justify-between px-20 pt-5 w-screen">
+        <p className="flex flex-col text-center font-serif text-lg">
+          Tomiwa <span>Kukoyi</span>
+        </p>
+
+        <nav className=" flex items-center text-md space-x-3">
           <span className=" cursor-pointer">About</span>
           <span className=" cursor-pointer">Work Experience</span>
           <span className=" cursor-pointer">Contact</span>
+          <button className=" bg-green-400 h-12 w-28 hover:bg-transparent hover:border hover:border-green-400 rounded-full">My Resume</button>
         </nav>
       </div>
     </div>
