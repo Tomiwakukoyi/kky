@@ -10,11 +10,11 @@ const WorkExperience = () => {
           className="flex flex-col items-start justify-center gap-3 pb-2"
         >
           <div className=" flex flex-col gap-2">
-            <h1>
+            <h1 className="md:text-xl">
               {experience.companyName} //
-              <span className=" text-blue-700"> {experience.date}</span>
+              <span className=" text-blue-700 "> {experience.date}</span>
             </h1>
-            <span className=" text-2xl">{experience.position}</span>
+            <span className=" text-2xl md:text-3xl">{experience.position}</span>
           </div>
 
           <ul className=" flex flex-col gap-2">
