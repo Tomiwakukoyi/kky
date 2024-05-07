@@ -7,7 +7,7 @@ const Work = () => {
     <section className="overflow-x-hidden flex flex-col gap-4">
       <SectionIntro title="WORK" heading="Work Experience" />
       <>
-        <div className=" text-gray-200 max-auto">———————————————————————</div>
+        <div className=" bg-gray-200 mx-auto w-screen h-0.5" />
         <WorkExperience />
       </>
     </section>

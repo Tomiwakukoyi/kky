@@ -24,7 +24,7 @@ const WorkExperience = () => {
               </li>
             ))}
           </ul>
-          <div className=" mx-auto text-gray-200">———————————————————————</div>
+          <div className=" mx-auto w-screen bg-gray-200  h-0.5 border-none " />
         </div>
       ))}
     </div>

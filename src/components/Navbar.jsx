@@ -46,17 +46,20 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
 
-      <div className="flex items-center text-white justify-between px-20 pt-5 w-screen">
+      <div className="hidden md:flex items-center text-white justify-between px-52 pt-5 w-screen">
         <p className="flex flex-col text-center font-serif text-lg">
           Tomiwa <span>Kukoyi</span>
         </p>
-
-        <nav className=" flex items-center text-md space-x-3">
-          <span className=" cursor-pointer">About</span>
-          <span className=" cursor-pointer">Work Experience</span>
-          <span className=" cursor-pointer">Contact</span>
-          <button className=" bg-green-400 h-12 w-28 hover:bg-transparent hover:border hover:border-green-400 rounded-full">My Resume</button>
-        </nav>
+        <div className=" flex items-center gap-10">
+          <nav className=" flex items-center text-md space-x-3">
+            <span className=" cursor-pointer">About</span>
+            <span className=" cursor-pointer">Work Experience</span>
+            <span className=" cursor-pointer">Contact</span>
+          </nav>
+          <button className=" bg-green-400 h-12 w-28 hover:bg-transparent hover:border hover:border-green-400 rounded-full">
+            My Resume
+          </button>
+        </div>
       </div>
     </div>
   );

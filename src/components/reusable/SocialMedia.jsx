@@ -10,7 +10,7 @@ const SocialMedia = () => {
           <SocialMediaIcon key={index} Icon={Icon} link={link} />
         ))}
       </div>
-      <div className=" mx-auto text-gray-200">———————————————————————</div>
+      <div className=" h-0.5 bg-gray-200 w-full" />
     </div>
   );
 };
